@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body, #pagina{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(251, 250, 240);
+            
+        }
+        #topo {
+            width: 100%;
+            height: 10%;
+            
+            display: flex;
+            align-items: center;
+            
+        }
+        #zap{
+            
+            margin-left: 2%;
+        }
+        #titulotopo {
+            color: green;
+            font-size: 20px;
+        }
+
+        #conteudo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+       
+        }
+        fieldset{
+            border-radius: 5%;
+            background-color: white;
+            padding: 15px 50px;
+            width: 40%;
+            align-items: center;
+            
+        }
+        #texto-botao{
+            
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #conteudofieldset1{
+            margin-left: 10%;
+        }
+        #conteudofieldset2{
+            font-size: 21px;
+        }
+        #baixar{
+            background-color: green;
+            height: 5vh;
+            width: 8vw;
+            border-radius: 30px;
+        }
+        #botao{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20vw;
+            margin-left: 5vw;
+            margin-bottom: 1.5vh;
+        }
+
+        #ajuda, #comecar{
+            text-decoration: underline green;
+            color: black;
+        }
+        #ajuda:hover, #comecar:hover, #telefone:hover{
+            color: green;
+        }
+        #p1{
+            font-size: 20px;
+        }
+
+        #conetar{
+            background-color: green;
+        }
+        #telefone{
+            margin-left: 6vw;
+            color: black;
+            text-decoration: underline green;
+        }
+        #textos-adicionais{
+            text-align: center;
+        }
+
+        #textos-adicionais{
+            margin-top: 2.5vh;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pagina">
+        <div id="topo">
+            <img id="zap" width="30px" height="30px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWh89c-J66oJU8cP1IplmrHHKqgpSJS5WVS2yzxbm-5A&s=10" alt="">
+            <span id="titulotopo">WhatsApp</span>
+        </div>
+        <div id="conteudo">
+            <fieldset>
+                <div id="conteudofieldset1">
+                    <h3>Baixar o WhatsApp para Windows</h3>
+                    <div id="texto-botao">
+                        <p id="p1">Tenha acesso a recursos extras, como ligações de voz e de vídeo, <br>
+                        compartilhamento de tela e muito mais.</p>
+                        <div id="botao">
+                            <button id="baixar">Baixar</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div id="conteudofieldset2">
+                    <h1>Escaneie para entrar</h1>
+                    <div>
+                        <ol>
+                            <li>Use a câmera do seu celular para escanear o QR code.</li> <br>
+                            <li>Toque no link para abrir o <strong>WhatsApp</strong></li> <br>
+                            <li>Escaneie o QR code novamente para acessar sua conta.</li> <br>
+                        </ol>
+                        <a href="" id="ajuda">Precisa de ajuda? -></a> <br> <br>
+
+                        <input type="checkbox" id="conectar">
+                        <label for="">Conectar conectando neste navegador</label>
+                        <a href="" id="telefone">Entrar com o número de telefone ></a>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="textos-adicionais">
+            <p>Não tem uma conta do WhatsApp? <a href="" id="comecar">Começar -></a></p>
+            <br>
+            <p style="color: rgba(63, 45, 4, 0.718);">Suas mensagens pessoais são protegidas com a criptografia de ponta a ponta.</p>
+            <br>
+            <span style="color: rgba(63, 45, 4, 0.718);">Termos de Serviço e Política de Privacidade</span>
+        </div>
+    </div>
+</body>
+</html>

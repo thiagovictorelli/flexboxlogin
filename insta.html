@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #pagina {
+            display: flex;
+            overflow: hidden;
+
+        }
+        #conteudo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 1000vw;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.205);  
+            height: 840px;
+                  
+        }
+
+        #formulariologin{
+            margin-bottom: vh;
+            margin-right: vw;
+        }
+
+        input {
+            height: 6vh;
+            width: 27vw;
+            border-radius: 10%;
+        }
+        #enviar {
+            background-color: rgba(18, 135, 252, 0.377);
+            color: white;
+            height: 5vh;
+        }
+        #esqueceu{
+            background-color: white;
+            border: none;
+            font-size: 16px;
+            height: 5vh;
+        }
+        #esqueceu:hover {
+            background-color: grey;
+        }
+        #face{
+            height: 5vh;
+            background-color: white;
+            font-size: 16px;
+        }
+
+        #novaconta{
+            border: 1px solid dodgerblue;
+            color: dodgerblue;
+            background-color: white;
+            height: 5vh;
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="pagina">
+        <div id="imagem">
+            <img src="imginstagram.png" alt="" style="border-right: 2px solid rgba(128, 128, 128, 0.205); border-bottom: 2px solid rgba(128, 128, 128, 0.205);">
+        </div>
+        <div id="conteudo">
+            <div id="formulario">
+                <h3>Entrar no Instagram</h3> <br>
+                <form action="" id="formulariologin">
+                    <input type="text" placeholder="Número de celular, nome de usuário ou email">
+                    <br> <br>
+                    <input type="password" placeholder="Senha">
+                    <br> <br> <br>
+                    <input type="submit" id="enviar">
+                    <br> <br>
+                    <input type="submit" id="esqueceu"  value="Esqueceu a senha?">
+                    <br><br><br>
+                    <input type="submit" id="face" value="Entrar com o Facebook">
+                    <br><br>
+                    <input type="submit" id="novaconta" value="Criar nova conta">
+                </form>
+                <br>
+                <p style="text-align: center; font-size: 16px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqHEvWv-5N4c71IXMSDxMHF1dSrqA7WNbtzeK1KC4ug&s=10" width="18px" alt="">Meta</p>
+            </div>
+        </div>
+        <div id="rodape">
+        </div>
+    </div>
+</body>
+</html>
